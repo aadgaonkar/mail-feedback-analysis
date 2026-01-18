@@ -7,7 +7,7 @@ compatibility_date = "2024-12-19"
 [[d1_databases]]
 binding = "DB"
 database_name = "feedback-db"
-database_id = "YOUR_DATABASE_ID"
+database_id = "326bac91-d8af-4c02-a672-367757344164"
 
 # Workers AI binding
 [ai]

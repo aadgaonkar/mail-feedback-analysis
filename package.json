@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
-    "db:apply": "wrangler d1 execute DB --file=./schema/d1.sql",
+    "db:apply": "npx wrangler d1 execute DB --file=./schema/d1.sql",
     "ingest:csv": "tsx scripts/ingest_csv.ts",
     "type-check": "tsc --noEmit"
   },
