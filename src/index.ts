@@ -106,6 +106,10 @@ export default {
         }
 
         const summary = await getSummaryData(env.DB);
+        console.log(
+  '[debug] SLACK_WEBHOOK_URL present:',
+  Boolean(env.SLACK_WEBHOOK_URL)
+);
         const success = await sendSlackDigest(env.SLACK_WEBHOOK_URL, summary);
 
         return successResponse({ sent: success });
@@ -191,3 +195,5 @@ async function runDailyEmail(env: Env) {
     console.log('✅ Daily report email sent');
   }
 }
+
+

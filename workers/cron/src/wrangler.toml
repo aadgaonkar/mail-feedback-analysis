@@ -1,0 +1,11 @@
+name = "nova-feedback-cron"
+main = "src/index.ts"
+compatibility_date = "2024-12-19"
+
+[triggers]
+crons = ["0 14 * * *"]
+
+[[services]]
+binding = "API"
+service = "nova-feedback-analysis"
+environment = "production"
