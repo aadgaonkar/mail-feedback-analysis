@@ -1,4 +1,4 @@
-name = "nova-feedback-analysis"
+name = "mail-feedback-analysis"
 main = "src/index.ts"
 compatibility_date = "2024-12-19"
 
